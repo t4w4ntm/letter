@@ -5,23 +5,35 @@
 const storyNodes = {
   start: {
     id: "start",
-    title: "เช้าวันที่เดดไลน์ใกล้เข้ามา",
-    text: "คุณตื่นขึ้นมาแล้วเห็นแจ้งเตือนงานที่ต้องส่งอีก 2 วัน ทั้งที่ยังทำไม่เสร็จเลย หัวใจเต้นแรงขึ้นเล็กน้อยพร้อมความคิดว่า “เดี๋ยวก่อนค่อยทำก็ได้มั้ง”",
+    title: "ใส่ชื่อ",
+    text: "กรอกชื่อและอายุ ",
     choices: [
       {
-        label: "ลุกจากเตียงไปดูว่างานค้างอะไรบ้าง",
+        label: "เริ่มต้น",
+        nextId: "startChoices"
+      }
+    ]
+  },
+
+  startChoices: {
+    id: "startChoices",
+    title: "xxxxxxx",
+    text: "xxxxxxx",
+    choices: [
+      {
+        label: "xxxxxxx",
         nextId: "tasks",
         letterCard: {
-          title: "กล้าที่จะมองงานที่ค้างอยู่",
-          line: "ถึงตัวฉันที่เคยกลัวจะมองงานที่ดองไว้… แค่กล้าหันไปมองความจริง ก็ถือว่าเริ่มต้นได้ดีแล้ว"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       },
       {
-        label: "ปัดแจ้งเตือนทิ้ง แล้วแกล้งนอนเล่นต่ออีกนิด",
+        label: "xxxxxxx",
         nextId: "delayMorning",
         letterCard: {
-          title: "การหนีปัญหาที่คุ้นเคย",
-          line: "ถึงตัวฉันที่ชอบแกล้งทำเป็นไม่เห็นเดดไลน์… ฉันเข้าใจนะว่ามันไม่ใช่ความขี้เกียจอย่างเดียว แต่มันคือความกลัวว่าจะทำได้ไม่ดีพอ"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       }
     ]
@@ -29,23 +41,23 @@ const storyNodes = {
 
   tasks: {
     id: "tasks",
-    title: "กองงานบนโต๊ะ",
-    text: "คุณนั่งลงที่โต๊ะ มองดูงานที่ต้องทำ ทั้งรีเสิร์ช สไลด์ พรีเซนต์ และรายงานเล่มใหญ่ มันดูเยอะจนไม่รู้จะเริ่มตรงไหนก่อนดี",
+    title: "xxxxxxx",
+    text: "xxxxxxx",
     choices: [
       {
-        label: "แบ่งงานเป็นชิ้นเล็ก ๆ แล้วเขียนลงกระดาษโน้ต",
+        label: "xxxxxxx",
         nextId: "planFocus",
         letterCard: {
-          title: "แตกงานให้จับต้องได้",
-          line: "ถึงตัวฉันที่เคยรู้สึกว่างานมันใหญ่เกินไป… การแบ่งเป็นชิ้นเล็ก ๆ ไม่ได้ทำให้งานหายไป แต่ทำให้เราพอเดินเข้าไปใกล้มันได้ทีละก้าว"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       },
       {
-        label: "เปิด YouTube หาแรงบันดาลใจก่อนเริ่มทำ",
+        label: "xxxxxxx",
         nextId: "inspire",
         letterCard: {
-          title: "การขอแรงใจจากโลกออนไลน์",
-          line: "ถึงตัวฉันที่มักจะหาคลิปสร้างแรงบันดาลใจก่อนลงมือทำ… ไม่ผิดหรอกที่อยากได้เสียงจากใครสักคนมาบอกว่า “เธอทำได้นะ”"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       }
     ]
@@ -53,23 +65,23 @@ const storyNodes = {
 
   delayMorning: {
     id: "delayMorning",
-    title: "เช้าที่ไหลไปอย่างเงียบ ๆ",
-    text: "คุณนอนเลื่อนฟีดไปเรื่อย ๆ จนเวลาล่วงเลยไปหนึ่งชั่วโมง ความรู้สึกผิดเริ่มโผล่มาเคาะประตูหัวใจเบา ๆ",
+    title: "xxxxxxx",
+    text: "xxxxxxx",
     choices: [
       {
-        label: "ปิดหน้าจอ แล้วลุกไปที่โต๊ะทำงานเสียที",
+        label: "xxxxxxx",
         nextId: "planFocus",
         letterCard: {
-          title: "กลับมาหาตัวเองทันเวลา",
-          line: "ถึงตัวฉันที่มักจะรู้สึกผิดหลังจากไถมือถือ… การยอมรับแล้วลุกขึ้นมาเปลี่ยน ณ ตอนนี้ ยังดีกว่าปล่อยให้ผ่านไปทั้งวัน"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       },
       {
-        label: "ทำเป็นไม่สนใจ แล้วเลื่อนต่อไปอีกหน่อย",
+        label: "xxxxxxx",
         nextId: "panicLater",
         letterCard: {
-          title: "ฉันรู้ว่าเธอยังไม่พร้อม",
-          line: "ถึงตัวฉันที่ปล่อยเวลาไหลไปทั้งที่รู้ว่าเดดไลน์ไล่หลัง… ฉันรู้ว่าเธอไม่ได้ขี้เกียจเสมอไป แค่ยังไม่รู้จะเริ่มจากตรงไหน"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       }
     ]
@@ -77,23 +89,23 @@ const storyNodes = {
 
   inspire: {
     id: "inspire",
-    title: "คลิปสร้างแรงบันดาลใจ",
-    text: "คุณเปิดคลิปเกี่ยวกับการจัดการเวลาและการเอาชนะตัวเอง ฟังแล้วก็รู้สึกอยากจะเปลี่ยน แต่ก็ยังมีเสียงเล็ก ๆ ในหัวบอกว่า “จะทำได้จริงเหรอ”",
+    title: "xxxxxxx",
+    text: "xxxxxxx",
     choices: [
       {
-        label: "หยิบกระดาษขึ้นมา เขียนเป้าหมายวันนี้แบบง่าย ๆ",
+        label: "xxxxxxx",
         nextId: "planFocus",
         letterCard: {
-          title: "เขียนลงกระดาษเพื่อยืนยันตัวเอง",
-          line: "ถึงตัวฉันที่ลังเลว่าจะเปลี่ยนตัวเองได้ไหม… การเขียนเป้าหมายเล็ก ๆ ลงบนกระดาษ คือสัญญาอ่อนโยนที่เธอให้กับตัวเอง"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       },
       {
-        label: "เซฟคลิปไว้ แล้วเปิดคลิปถัดไปต่อ",
+        label: "xxxxxxx",
         nextId: "panicLater",
         letterCard: {
-          title: "แรงบันดาลใจที่ยังไม่กลายเป็นการลงมือทำ",
-          line: "ถึงตัวฉันที่เซฟคลิปดี ๆ ไว้เต็มเพลย์ลิสต์ แต่ยังไม่ได้เริ่มลงมือ… ไม่เป็นไรนะ อย่างน้อยใจเธอก็ยังอยากจะเปลี่ยน"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       }
     ]
@@ -101,23 +113,23 @@ const storyNodes = {
 
   panicLater: {
     id: "panicLater",
-    title: "เวลาที่เริ่มบีบ",
-    text: "ผ่านไปอีกหลายชั่วโมงโดยแทบไม่ได้แตะงาน ความตึงเครียดยิ่งเพิ่มขึ้น จนเริ่มโทษตัวเองเบา ๆ ว่า “อีกแล้วสินะ”",
+    title: "xxxxxxx",
+    text: "xxxxxxx",
     choices: [
       {
-        label: "ลองหยุดทุกอย่าง แล้วเขียนว่า “ตอนนี้ฉันรู้สึกยังไง”",
+        label: "xxxxxxx",
         nextId: "writeFeeling",
         letterCard: {
-          title: "ฟังเสียงข้างในอย่างจริงจัง",
-          line: "ถึงตัวฉันที่ชอบโทษตัวเองเวลาเริ่มช้า… การยอมเขียนความรู้สึกออกมา แสดงว่าเธอกล้าฟังหัวใจตัวเองมากขึ้นแล้ว"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       },
       {
-        label: "ฝืนทำงานทันทีโดยไม่คิดอะไร",
+        label: "xxxxxxx",
         nextId: "lateNight",
         letterCard: {
-          title: "ทำต่อไปแม้ใจจะยังหนัก",
-          line: "ถึงตัวฉันที่เลือกกัดฟันทำต่อทั้งที่ยังโทษตัวเอง… ฉันอยากให้รู้ว่าเธอพยายามมากกว่าที่ตัวเองคิดเสมอ"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       }
     ]
@@ -125,23 +137,23 @@ const storyNodes = {
 
   planFocus: {
     id: "planFocus",
-    title: "แผนเล็ก ๆ สำหรับวันนี้",
-    text: "คุณเขียนเป้าหมายง่าย ๆ ว่า วันนี้จะทำให้เสร็จอย่างน้อยหนึ่งส่วน ไม่ต้องทำทุกอย่าง แต่ขอแค่ “ขยับเข้าใกล้เดดไลน์อย่างตั้งใจ”",
+    title: "xxxxxxx",
+    text: "xxxxxxx",
     choices: [
       {
-        label: "เริ่มจากงานชิ้นที่ง่ายที่สุด เพื่อสร้างโมเมนตัม",
+        label: "xxxxxxx",
         nextId: "smallWin",
         letterCard: {
-          title: "เริ่มจากก้าวเล็ก ๆ",
-          line: "ถึงตัวฉันที่กลัวว่าก้าวแรกจะไม่สมบูรณ์… งานง่าย ๆ ที่เธอทำสำเร็จ คือหลักฐานว่าการเริ่มเล็ก ๆ ก็มีพลัง"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       },
       {
-        label: "เริ่มจากงานยากที่สุด เพราะอยากเคลียร์ให้จบ",
+        label: "xxxxxxx",
         nextId: "deepWork",
         letterCard: {
-          title: "เลือกสู้กับงานยากตรงหน้า",
-          line: "ถึงตัวฉันที่ตัดสินใจเริ่มจากงานยาก… ต่อให้รู้สึกโหด แต่นั่นแปลว่าเธอกล้าที่จะลองเผชิญหน้ากับสิ่งที่กลัวที่สุด"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       }
     ]
@@ -149,23 +161,23 @@ const storyNodes = {
 
   smallWin: {
     id: "smallWin",
-    title: "ชัยชนะเล็ก ๆ",
-    text: "หลังจากลงมือทำไปสักพัก คุณปิดหนึ่ง task ได้สำเร็จ แม้มันจะไม่ใช่ส่วนที่ใหญ่ที่สุด แต่ก็ทำให้รู้สึกว่าตัวเอง “ไม่ได้ยืนอยู่ที่เดิม”",
+    title: "xxxxxxx",
+    text: "xxxxxxx",
     choices: [
       {
-        label: "จดบันทึกว่าวันนี้ฉันทำอะไรสำเร็จไปแล้วบ้าง",
+        label: "xxxxxxx",
         nextId: "eveningReflect",
         letterCard: {
-          title: "ให้เครดิตตัวเอง",
-          line: "ถึงตัวฉันที่มักจะมองข้ามสิ่งที่ตัวเองทำได้… การจดว่าทำอะไรไปแล้ว คือจดหมายขอบคุณเล็ก ๆ ที่เธอเขียนถึงตัวเอง"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       },
       {
-        label: "ไม่ต้องจดอะไร เดี๋ยวค่อยนึกเอาทีหลัง",
+        label: "xxxxxxx",
         nextId: "eveningTired",
         letterCard: {
-          title: "ความสำเร็จที่เธอมักจะลืมจำ",
-          line: "ถึงตัวฉันที่บอกว่า “ไม่เป็นไร เดี๋ยวค่อยจำเอง”… ฉันอยากให้เธอรู้ว่า ทุกความพยายามของเธอมีคุณค่าพอจะถูกบันทึกไว้เสมอ"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       }
     ]
@@ -173,23 +185,23 @@ const storyNodes = {
 
   deepWork: {
     id: "deepWork",
-    title: "โหมดโฟกัสสุดตัว",
-    text: "คุณปิดแจ้งเตือนทั้งหมด เปิดเพลงเบา ๆ แล้วจมอยู่กับงานยากที่สุด เวลาผ่านไปอย่างรวดเร็ว แต่ก็แลกมากับความล้าอย่างชัดเจน",
+    title: "xxxxxxx",
+    text: "xxxxxxx",
     choices: [
       {
-        label: "พักสายตาและยืดตัวสัก 5 นาที",
+        label: "xxxxxxx",
         nextId: "eveningReflect",
         letterCard: {
-          title: "ยอมให้ตัวเองได้พัก",
-          line: "ถึงตัวฉันที่เคยคิดว่าต้องโฟกัสให้เต็ม 100% ตลอดเวลา… การพักไม่ใช่การถอยหนี แต่มันคือการเตรียมแรงสำหรับก้าวต่อไป"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       },
       {
-        label: "ฝืนทำต่อไปเพราะกลัวจะหลุดโฟกัส",
+        label: "xxxxxxx",
         nextId: "eveningTired",
         letterCard: {
-          title: "ความดื้อที่เกิดจากความกลัว",
-          line: "ถึงตัวฉันที่ฝืนทำต่อแม้สมองจะล้า… ฉันรู้ว่าเธอกลัวว่าจะไม่ทันเดดไลน์ แต่ร่างกายและหัวใจก็อยากให้เธอเบามือตัวเองลงกว่านี้หน่อย"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       }
     ]
@@ -197,23 +209,23 @@ const storyNodes = {
 
   writeFeeling: {
     id: "writeFeeling",
-    title: "เขียนถึงความรู้สึกตอนนี้",
-    text: "คุณหยิบกระดาษขึ้นมาเขียนว่า “ตอนนี้ฉันรู้สึกยังไง” คำบางคำที่ไม่เคยยอมพูดกับใคร ค่อย ๆ ไหลออกมาบนหน้ากระดาษ",
+    title: "xxxxxxx",
+    text: "xxxxxxx",
     choices: [
       {
-        label: "เขียนต่อว่า “ถ้าย้อนกลับไปบอกตัวเองในอดีตได้ ฉันอยากพูดว่าอะไร”",
+        label: "xxxxxxx",
         nextId: "preSummary",
         letterCard: {
-          title: "เริ่มต้นจดหมายถึงตัวเอง",
-          line: "ถึงตัวฉันในวันที่ยังไม่เข้าใจตัวเอง… ขอบคุณที่ยังยืนอยู่ตรงนี้ แม้จะล้มเหลวมาแล้วนับครั้งไม่ถ้วน"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       },
       {
-        label: "เก็บกระดาษไว้เฉย ๆ ยังไม่อยากคิดถึงอดีต",
+        label: "xxxxxxx",
         nextId: "preSummary",
         letterCard: {
-          title: "เก็บคำพูดไว้รอวันที่พร้อม",
-          line: "ถึงตัวฉันที่ยังไม่พร้อมจะมองย้อนกลับไป… ไม่เป็นไรเลย วันนี้แค่ยอมเขียนความรู้สึกปัจจุบันออกมา ก็ถือว่าเธอเดินหน้าไปอีกก้าวแล้ว"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       }
     ]
@@ -221,23 +233,23 @@ const storyNodes = {
 
   eveningReflect: {
     id: "eveningReflect",
-    title: "เย็นวันเดียวกัน",
-    text: "เมื่อมองย้อนกลับไปในวันเดียวกัน คุณพบว่าตัวเองทำอะไรไปได้มากกว่าที่คิด แม้งานยังไม่เสร็จ แต่ก็ไม่ใช่ศูนย์เหมือนตอนเช้าอีกต่อไป",
+    title: "xxxxxxx",
+    text: "xxxxxxx",
     choices: [
       {
-        label: "ลองเขียนโน้ตสั้น ๆ ว่า “ฉันภูมิใจอะไรในตัวเองวันนี้”",
+        label: "xxxxxxx",
         nextId: "preSummary",
         letterCard: {
-          title: "มองตัวเองด้วยสายตาอ่อนโยน",
-          line: "ถึงตัวฉันที่เพิ่งยอมบอกว่าภูมิใจในตัวเอง… ขอให้เธอเก็บความรู้สึกนี้ไว้ใช้ในวันที่เธอเผลอลืมคุณค่าของตัวเองอีกครั้ง"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       },
       {
-        label: "บอกตัวเองว่า “ก็แค่ทำหน้าที่ไปตามปกติเอง” แล้วปล่อยผ่าน",
+        label: "xxxxxxx",
         nextId: "preSummary",
         letterCard: {
-          title: "ยังไม่กล้าพูดคำว่าภูมิใจ",
-          line: "ถึงตัวฉันที่คิดว่าตัวเองก็แค่ทำสิ่งที่ควรทำ… แท้จริงแล้ว เธอทำได้ดีมากกว่านั้นเยอะเลย"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       }
     ]
@@ -245,23 +257,23 @@ const storyNodes = {
 
   eveningTired: {
     id: "eveningTired",
-    title: "ค่ำคืนแห่งความเหนื่อยล้า",
-    text: "ร่างกายและหัวสมองของคุณเริ่มตื้อ แต่เดดไลน์ก็ยังไม่ขยับไปไหน คุณทั้งโล่งใจที่ทำไปบ้าง และผิดหวังที่ไปได้ไม่ไกลอย่างที่หวัง",
+    title: "xxxxxxx",
+    text: "xxxxxxx",
     choices: [
       {
-        label: "ยอมพัก และบอกตัวเองว่า “พรุ่งนี้ค่อยสู้ต่อก็ได้”",
+        label: "xxxxxxx",
         nextId: "preSummary",
         letterCard: {
-          title: "อนุญาตให้ตัวเองหยุด",
-          line: "ถึงตัวฉันที่ยอมให้ตัวเองพักในวันที่ยังทำไม่เสร็จ… การหยุดหายใจลึก ๆ ไม่ได้ทำให้เธอล้มเหลว แต่มันทำให้เธอกลับมาสู้ได้นานขึ้น"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       },
       {
-        label: "ฝืนทำต่อจนดึก แล้วค่อยล้มตัวลงนอนแบบหมดแรง",
+        label: "xxxxxxx",
         nextId: "preSummary",
         letterCard: {
-          title: "ฉันเห็นความพยายามของเธอ",
-          line: "ถึงตัวฉันที่เข้านอนด้วยความรู้สึกผิด… ต่อให้วันนี้ไม่สมบูรณ์แบบ แต่ฉันอยากให้เธอรู้ว่าเธอพยายามเต็มที่ในแบบของเธอแล้ว"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       }
     ]
@@ -269,15 +281,15 @@ const storyNodes = {
 
   preSummary: {
     id: "preSummary",
-    title: "หลังเดดไลน์ผ่านไป",
-    text: "ไม่ว่าผลลัพธ์ของงานจะออกมาแบบไหน เดดไลน์ก็ผ่านไปแล้ว เหลือเพียงความทรงจำถึงวันที่คุณทั้งหนี ทั้งสู้ ทั้งล้ม และทั้งลุกขึ้นมาใหม่",
+    title: "xxxxxxx",
+    text: "xxxxxxx",
     choices: [
       {
-        label: "ลองมองย้อนกลับไปหาตัวเองในอดีตสักครั้ง",
+        label: "xxxxxxx",
         nextId: "summary",
         letterCard: {
-          title: "เดินมาถึงจุดที่หันกลับไปมองได้แล้ว",
-          line: "ถึงตัวฉันในทุกช่วงเวลาที่ผ่านมา… ขอบคุณที่ไม่เคยหยุดพยายาม แม้หลายครั้งจะรู้สึกว่าตัวเองไม่เก่งพอ"
+          title: "xxxxxxx",
+          line: "xxxxxxx"
         }
       }
     ]
@@ -286,7 +298,7 @@ const storyNodes = {
   // Node สรุป (หน้าสุดท้าย)
   summary: {
     id: "summary",
-    title: "จดหมายถึงตัวฉันในอดีต",
+    title: "xxxxxxx",
     text: "", // จะไม่ใช้ text ตรงนี้ ใช้ renderSummary แทน
     choices: []
   }
@@ -295,8 +307,32 @@ const storyNodes = {
 // ====== State ======
 const gameState = {
   currentNodeId: "start",
-  path: [] // { nodeId, choiceLabel, letterCard }
+  path: [], // { nodeId, choiceLabel, letterCard }
+  user: {
+    name: "",
+    age: ""
+  }
 };
+
+function isStartFormValid() {
+  const name = (gameState.user.name || "").trim();
+  const ageString = (gameState.user.age || "").trim();
+  if (!name) return false;
+  if (!ageString) return false;
+  const ageNumber = Number(ageString);
+  if (!Number.isFinite(ageNumber)) return false;
+  if (ageNumber < 1 || ageNumber > 120) return false;
+  return true;
+}
+
+function updateStartFormState(container) {
+  if (gameState.currentNodeId !== "start") return;
+  const continueBtn = container.querySelector(".choice-btn");
+  if (!continueBtn) return;
+  const isValid = isStartFormValid();
+  continueBtn.disabled = !isValid;
+  continueBtn.classList.toggle("choice-btn-disabled", !isValid);
+}
 
 // ====== Utils ======
 function $(selector) {
@@ -314,7 +350,7 @@ function renderCurrentNode() {
   }
 
   if (!node) {
-    container.innerHTML = `<div class="story-card"><p>ไม่พบเนื้อเรื่องสำหรับ id: ${gameState.currentNodeId}</p></div>`;
+    container.innerHTML = `<div class="story-card"><p>xxxxxxx</p></div>`;
     return;
   }
 
@@ -322,15 +358,53 @@ function renderCurrentNode() {
     <div class="story-card">
       <div class="story-title">${node.title}</div>
       <div class="story-body">${node.text}</div>
+      ${
+        gameState.currentNodeId === "start"
+          ? `
+        <div class="user-form" aria-label="xxxxxxx">
+          <div class="form-row">
+            <label for="user-name">xxxxxxx</label>
+            <input id="user-name" type="text" inputmode="text" autocomplete="name" placeholder="xxxxxxx" />
+          </div>
+          <div class="form-row">
+            <label for="user-age">xxxxxxx</label>
+            <input id="user-age" type="number" inputmode="numeric" min="1" max="120" placeholder="xxxxxxx" />
+          </div>
+        </div>
+      `
+          : ""
+      }
       <div class="choices" id="choices"></div>
       <div class="story-footer">
-        หน้าที่ ${gameState.path.length + 1}
+        xxxxxxx ${gameState.path.length + 1}
       </div>
     </div>
   `;
 
   const cardElement = container.querySelector(".story-card");
   cardElement.classList.add("fade-in");
+
+  // Bind inputs on start page
+  if (gameState.currentNodeId === "start") {
+    const nameInput = document.getElementById("user-name");
+    const ageInput = document.getElementById("user-age");
+    if (nameInput) {
+      nameInput.value = gameState.user.name || "";
+      nameInput.addEventListener("input", e => {
+        gameState.user.name = e.target.value;
+        updateStartFormState(container);
+      });
+    }
+    if (ageInput) {
+      ageInput.value = gameState.user.age || "";
+      ageInput.addEventListener("input", e => {
+        gameState.user.age = e.target.value;
+        updateStartFormState(container);
+      });
+    }
+
+    updateStartFormState(container);
+  }
 
   const choicesDiv = $("#choices");
   node.choices.forEach(choice => {
@@ -346,6 +420,18 @@ function renderCurrentNode() {
 function handleChoice(node, choice) {
   const container = $("#game-container");
   const currentCard = container.querySelector(".story-card");
+
+  if (node.id === "start" && !isStartFormValid()) {
+    updateStartFormState(container);
+    const nameInput = document.getElementById("user-name");
+    const ageInput = document.getElementById("user-age");
+    if (nameInput && !(gameState.user.name || "").trim()) {
+      nameInput.focus();
+    } else if (ageInput) {
+      ageInput.focus();
+    }
+    return;
+  }
 
   if (currentCard) {
     currentCard.classList.remove("fade-in");
@@ -383,27 +469,29 @@ function renderSummary() {
   if (cards.length === 0) {
     container.innerHTML = `
       <div class="story-card">
-        <div class="summary-title">จดหมายยังว่างเปล่า</div>
+        <div class="summary-title">xxxxxxx</div>
         <div class="summary-subtitle">
-          ดูเหมือนว่าวันนี้คุณยังไม่ได้เขียนอะไรถึงตัวเองในอดีตเลย ลองเล่นใหม่อีกครั้ง แล้วฟังเสียงข้างในให้ชัดขึ้นสักนิดดีไหม
+          xxxxxxx
         </div>
-        <button class="restart-btn" onclick="restartGame()">เริ่มใหม่อีกครั้ง</button>
+        <button class="restart-btn" onclick="restartGame()">xxxxxxx</button>
       </div>
     `;
     return;
   }
 
-  const titleSummary = cards.map(card => `“${card.title}”`).join(" → ");
+  const titleSummary = cards.map(card => `"${card.title}"`).join(" → ");
   const lineSummary = cards.map(card => card.line).join(" ");
+  const nameLabel = (gameState.user.name || "").trim() || "xxxxxxx";
+  const ageText = (gameState.user.age || "").trim();
 
   container.innerHTML = `
     <div class="story-card">
-      <div class="summary-title">จดหมายที่คุณเขียนถึงตัวเอง</div>
+      <div class="summary-title">xxxxxxx</div>
       <div class="summary-subtitle">
-        ข้อความต่อไปนี้คือบันทึกเดียวของเส้นทางที่คุณเลือกเดินในวันนี้
+        xxxxxxx
       </div>
       <div class="summary-card summary-card-single">
-        <div class="summary-label">ถึงตัวฉันในอดีต</div>
+        <div class="summary-label">xxxxxxx ${nameLabel}${ageText ? ` (xxxxxxx ${ageText})` : ""} xxxxxxx</div>
         <div class="summary-message">
           <p>${titleSummary}</p>
           <p>${lineSummary}</p>
@@ -417,10 +505,23 @@ function renderSummary() {
 function restartGame() {
   gameState.currentNodeId = "start";
   gameState.path = [];
+  gameState.user = { name: "", age: "" };
   renderCurrentNode();
 }
 
 // ====== Start ======
 document.addEventListener("DOMContentLoaded", () => {
   renderCurrentNode();
+
+  const introScreen = document.getElementById("intro-screen");
+  const introButton = document.getElementById("intro-continue");
+
+  if (introScreen && introButton) {
+    introButton.addEventListener("click", () => {
+      introScreen.classList.add("intro-hidden");
+      setTimeout(() => {
+        introScreen.remove();
+      }, 600);
+    });
+  }
 });
