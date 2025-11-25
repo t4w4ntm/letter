@@ -68,13 +68,11 @@ body {
   content: "";
   position: absolute;
   inset: 18px 18px 18px 18px;
-  background-image: repeating-linear-gradient(
-    to bottom,
-    rgba(170, 170, 170, 0.35) 0,
-    rgba(170, 170, 170, 0.35) 1px,
-    transparent 1px,
-    transparent 26px
-  );
+  background-image: repeating-linear-gradient(to bottom,
+      rgba(170, 170, 170, 0.35) 0,
+      rgba(170, 170, 170, 0.35) 1px,
+      transparent 1px,
+      transparent 26px);
   opacity: 0.35;
   pointer-events: none;
   border-radius: 18px;
@@ -103,6 +101,7 @@ body {
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -114,6 +113,7 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+
   to {
     opacity: 0;
     transform: translateY(-10px);
@@ -301,6 +301,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 /* ตัวเลือก */
 .choices {
   margin-top: 16px;
@@ -385,11 +386,9 @@ body {
 .summary-card {
   border-radius: 14px;
   padding: 10px 13px 12px;
-  background: linear-gradient(
-    135deg,
-    rgba(245, 245, 245, 0.95),
-    rgba(225, 225, 225, 0.9)
-  );
+  background: linear-gradient(135deg,
+      rgba(245, 245, 245, 0.95),
+      rgba(225, 225, 225, 0.9));
   border: 1px solid rgba(150, 150, 150, 0.9);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -493,6 +492,7 @@ body {
 
 /* Motion accessibility */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -569,4 +569,52 @@ body {
   .summary-step {
     padding: 12px 14px;
   }
+}
+
+/* New Elements for Flowchart Update */
+.game-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(140, 140, 140, 0.8);
+  background: #fcfcfc;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2c2c2c;
+  resize: vertical;
+  margin-bottom: 16px;
+  font-family: inherit;
+}
+
+.game-textarea:focus {
+  outline: 3px solid rgba(60, 60, 60, 0.8);
+  outline-offset: 1px;
+  background: #fff;
+}
+
+.primary-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: #1c1c1c;
+  color: #f5f5f5;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.primary-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
